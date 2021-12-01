@@ -1,0 +1,11 @@
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+.bloop/
+.bsp/
+.vscode/
+project/.bloop/
+sample-ivy.credentials

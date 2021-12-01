@@ -1,0 +1,54 @@
+@(greeting: String)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Summoner Main</title>
+      <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+      <!-- Bootstrap core CSS -->
+    <link href="@controllers.routes.Assets.versioned("css/bootstrap.min.css")" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+    <link href="@controllers.routes.Assets.versioned("css/mdb.min.css")" rel="stylesheet">
+      <!-- Your custom styles (optional) -->
+    <link href="@controllers.routes.Assets.versioned("css/style.css")" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="text-center">
+          <div class="form-outline"; style="margin-bottom:20px">
+            <input type="text" id="summonerName" class="form-control" />
+            <label class="form-label" for="summonerName">Summoner Name</label>
+          </div>
+
+          <button type="button" id="get_main_btn" class="btn btn-primary">Get Main</button>
+
+          <div class="form-outline"; style="margin-top:20px";>
+            <input type="text" id="mainChampion" class="form-control" />
+            <label class="form-label" for="mainChampion">Main Champion</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="@controllers.routes.Assets.versioned("js/jquery-3.4.1.min.js")"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="@controllers.routes.Assets.versioned("js/popper.min.js")"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="@controllers.routes.Assets.versioned("js/bootstrap.min.js")"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="@controllers.routes.Assets.versioned("js/mdb.min.js")"></script>
+    <!-- getMain JavaScript -->
+    <script type="text/javascript" src="@controllers.routes.Assets.versioned("js/getMain.js")"></script>
+      <!-- Embedded Javascript router -->
+    <script type="text/javascript" src="@controllers.routes.JsRoutes.jsRoutes"></script>
+  </body>
+</html>
